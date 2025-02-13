@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
 function Header({
@@ -13,8 +14,10 @@ function Header({
 
   return (
     <header style={headerStyles}>
-      <div className='container'>
-        <h2>{text}</h2>
+      <div className='container header-link'>
+        <Link to='/'>
+          <h2>{text}</h2>
+        </Link>
       </div>
     </header>
   )
